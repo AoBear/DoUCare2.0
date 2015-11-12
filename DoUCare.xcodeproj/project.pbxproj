@@ -43,7 +43,7 @@
 		4EEF9F6A1BF4C247003486C5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4EEF9F6B1BF4C247003486C5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4EEF9F6E1BF4C247003486C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4EEF9F701BF4C247003486C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4EEF9F701BF4C247003486C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		4EEF9F731BF4C247003486C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EEF9F751BF4C247003486C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EEF9F7A1BF4C247003486C5 /* DoUCareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoUCareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +52,7 @@
 		4EEF9F851BF4C247003486C5 /* DoUCareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoUCareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EEF9F891BF4C247003486C5 /* DoUCareUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoUCareUITests.m; sourceTree = "<group>"; };
 		4EEF9F8B1BF4C247003486C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EEF9FA01BF4C835003486C5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		753D1C81F827E05017814891 /* Pods-DoUCare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoUCare.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoUCare/Pods-DoUCare.release.xcconfig"; sourceTree = "<group>"; };
 		956EEF7F8099227EEDB2B5BD /* Pods-DoUCare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoUCare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoUCare/Pods-DoUCare.debug.xcconfig"; sourceTree = "<group>"; };
 		DB2A46B06BB1407948777075 /* libPods-DoUCare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DoUCare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,14 +109,19 @@
 		4EEF9F631BF4C247003486C5 /* DoUCare */ = {
 			isa = PBXGroup;
 			children = (
+				4EEF9F971BF4C7EE003486C5 /* Define */,
+				4EEF9F981BF4C7EE003486C5 /* Model */,
+				4EEF9F991BF4C7EE003486C5 /* NetManager */,
+				4EEF9F9A1BF4C7EE003486C5 /* Resource */,
+				4EEF9F9B1BF4C7EE003486C5 /* Util */,
+				4EEF9F9C1BF4C7EE003486C5 /* Vendor */,
+				4EEF9F9D1BF4C7EE003486C5 /* View */,
+				4EEF9F9E1BF4C7EE003486C5 /* ViewController */,
+				4EEF9F9F1BF4C7EE003486C5 /* ViewModel */,
 				4EEF9F671BF4C247003486C5 /* AppDelegate.h */,
 				4EEF9F681BF4C247003486C5 /* AppDelegate.m */,
 				4EEF9F6A1BF4C247003486C5 /* ViewController.h */,
 				4EEF9F6B1BF4C247003486C5 /* ViewController.m */,
-				4EEF9F6D1BF4C247003486C5 /* Main.storyboard */,
-				4EEF9F701BF4C247003486C5 /* Assets.xcassets */,
-				4EEF9F721BF4C247003486C5 /* LaunchScreen.storyboard */,
-				4EEF9F751BF4C247003486C5 /* Info.plist */,
 				4EEF9F641BF4C247003486C5 /* Supporting Files */,
 			);
 			path = DoUCare;
@@ -124,6 +130,7 @@
 		4EEF9F641BF4C247003486C5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4EEF9F751BF4C247003486C5 /* Info.plist */,
 				4EEF9F651BF4C247003486C5 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -145,6 +152,73 @@
 				4EEF9F8B1BF4C247003486C5 /* Info.plist */,
 			);
 			path = DoUCareUITests;
+			sourceTree = "<group>";
+		};
+		4EEF9F971BF4C7EE003486C5 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		4EEF9F981BF4C7EE003486C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4EEF9F991BF4C7EE003486C5 /* NetManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetManager;
+			sourceTree = "<group>";
+		};
+		4EEF9F9A1BF4C7EE003486C5 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				4EEF9F6D1BF4C247003486C5 /* Main.storyboard */,
+				4EEF9F701BF4C247003486C5 /* Assets.xcassets */,
+				4EEF9F721BF4C247003486C5 /* LaunchScreen.storyboard */,
+				4EEF9FA01BF4C835003486C5 /* PrefixHeader.pch */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		4EEF9F9B1BF4C7EE003486C5 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		4EEF9F9C1BF4C7EE003486C5 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		4EEF9F9D1BF4C7EE003486C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4EEF9F9E1BF4C7EE003486C5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4EEF9F9F1BF4C7EE003486C5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		8ECB77CF456CC5D5C64DB864 /* Pods */ = {
@@ -392,6 +466,7 @@
 				4EEF9F6E1BF4C247003486C5 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		4EEF9F721BF4C247003486C5 /* LaunchScreen.storyboard */ = {
@@ -400,6 +475,7 @@
 				4EEF9F731BF4C247003486C5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

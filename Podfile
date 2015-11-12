@@ -7,6 +7,7 @@ target 'DoUCare' do
 
 pod 'AFNetworking'
 pod 'BlocksKit'
+pod 'CocoaLumberjack'
 pod 'Masonry'
 pod 'MBProgressHUD'
 pod 'MJExtension'
@@ -17,6 +18,13 @@ pod 'TPKeyboardAvoiding'
 pod 'MLTransition'
 pod 'FMDB'
 pod 'AwesomeMenu'
+pod 'Shimmer'
+pod 'FlatUIKit'
+pod 'AsyncDisplayKit'
+pod 'RESideMenu'
+pod 'SWTableViewCell'
+pod 'MWPhotoBrowser'
+pod 'WMPageController'
 
 end
 
